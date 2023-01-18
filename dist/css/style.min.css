@@ -520,7 +520,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .home-banner-area {
-  background: url(../../images/banner-bg.png) center;
+  background: url(../images/banner-bg.png) center;
   background-size: cover;
   padding-top: 100px;
 }
@@ -672,7 +672,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contact__area {
-  background: url(../../images/banner-bg.png) center;
+  background: url(../images/banner-bg.png) center;
   background-size: cover;
   padding-top: 72px;
   padding-bottom: 112px;
