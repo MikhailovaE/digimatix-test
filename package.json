@@ -1,7 +1,7 @@
 {
   "name": "gulp-2022",
   "version": "1.3.0",
-  "description": "Сборка Gulp+Webpack+Babel",
+  "description": "digimatix-test",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -13,10 +13,6 @@
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StarkElessar/gulp-2022.git"
-  },
   "keywords": [
     "gulp",
     "webpack",
@@ -25,12 +21,8 @@
     "scss",
     "html"
   ],
-  "author": "Sergei Chevdar <serj.elessar@gmail.com>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/StarkElessar/gulp-2022/issues"
-  },
-  "homepage": "https://{UserName}.github.io/{NameRepo}",
+  "homepage": "https://mikhailovae.github.io/digimatix-test/dist/index.html",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/polyfill": "^7.12.1",
