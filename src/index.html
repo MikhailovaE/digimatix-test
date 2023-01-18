@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="page">
+        @@include('html/banner.html', {})
+        @@include('html/promo.html', {})
+        @@include('html/contact.html', {})
+        
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    <!-- ============= Outdated Browser ============= -->
+    <div id="outdated"></div>
+
+
+    <!-- javascript includes -->
+    <script src="static/outdatedbrowser.min.js"></script>
+
+    <!-- plugin call -->
+    <script>
+        //event listener form DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+        //call function after DOM ready
+        addLoadEvent(function(){
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'transform',
+                languagePath: '../outdatedbrowser/lang/en.html'
+            })
+        });
+    </script>
+    @@include('html/script.html', {})
+  </body>
+</html> 
